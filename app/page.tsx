@@ -1,100 +1,89 @@
-export default function Home() {
+export default function Portfolio() {
   return (
     <div
       style={{
-        fontFamily: "Arial, sans-serif",
-        background: "#f9fafb",
-        color: "#111827",
-        minHeight: "100vh",
         padding: "40px",
+        fontFamily: "Arial",
+        maxWidth: "800px",
+        margin: "0 auto",
+        lineHeight: "1.6",
       }}
     >
-      {/* HEADER */}
-      <div style={{ textAlign: "center", marginBottom: "40px" }}>
-        <h1 style={{ fontSize: "42px", marginBottom: "5px" }}>
-          Alicia Al
-        </h1>
-        <p style={{ fontSize: "18px", color: "#374151" }}>
-          Cybersecurity Student | Aspiring Medical Device Security Engineer
+      <h1 style={{ fontSize: "36px", marginBottom: "5px" }}>
+        Alicia Al-Mansaray
+      </h1>
+
+      <p style={{ color: "gray", marginBottom: "30px" }}>
+        Cybersecurity Student | Future Medical Device Security Engineer
+      </p>
+
+      <hr />
+
+      <h2 style={{ marginTop: "30px" }}>About Me</h2>
+      <p>
+        I am a cybersecurity student with experience in system security,
+        networking, and vulnerability analysis. I am passionate about protecting
+        patient data and securing healthcare systems.
+      </p>
+
+      <h2 style={{ marginTop: "30px" }}>Skills</h2>
+      <ul>
+        <li>Java</li>
+        <li>Python</li>
+        <li>C</li>
+        <li>Linux & Networking</li>
+        <li>Cybersecurity Analysis</li>
+      </ul>
+
+      <h2 style={{ marginTop: "30px" }}>Projects</h2>
+
+      <div style={{ marginBottom: "15px" }}>
+        <strong>Linux Kernel Module</strong>
+        <p>
+          Developed a module for real-time health monitoring and system
+          performance tracking.
         </p>
       </div>
 
-      {/* MAIN CARD */}
-      <div
-        style={{
-          maxWidth: "900px",
-          margin: "auto",
-          background: "white",
-          padding: "30px",
-          borderRadius: "10px",
-          boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
-        }}
-      >
-        {/* ABOUT */}
-        <h2>About Me</h2>
+      <div style={{ marginBottom: "15px" }}>
+        <strong>Privilege Escalation Lab</strong>
         <p>
-          I am a cybersecurity student focused on protecting systems and
-          healthcare technologies. I am particularly interested in securing
-          medical devices and ensuring the safety of sensitive data.
+          Simulated a SUID misconfiguration attack on Ubuntu to demonstrate
+          privilege escalation vulnerabilities.
         </p>
+      </div>
 
-        {/* SKILLS */}
-        <h2>Skills</h2>
-        <ul>
-          <li>Java, Python, C</li>
-          <li>Linux & Networking</li>
-          <li>Cybersecurity Analysis</li>
-          <li>Wireshark, basic penetration testing</li>
-        </ul>
+      <div style={{ marginBottom: "15px" }}>
+        <strong>UDP Chat Application</strong>
+        <p>
+          Built a client-server chat system using Python and UDP sockets.
+        </p>
+      </div>
 
-        {/* PROJECTS */}
-        <h2>Projects</h2>
-
-        <h3>Linux Kernel Module</h3>
-        <p><b>Problem:</b> Systems require real-time monitoring to detect threats.</p>
-        <p><b>Solution:</b> Developed a Linux kernel module to monitor system activity.</p>
-        <p><b>Technologies:</b> C, Linux</p>
-
-        <h3>Privilege Escalation Lab</h3>
-        <p><b>Problem:</b> Misconfigured permissions can allow attackers root access.</p>
-        <p><b>Solution:</b> Built a lab demonstrating SUID-based privilege escalation.</p>
-        <p><b>Technologies:</b> Ubuntu, Bash</p>
-
-        <h3>UDP Chat Application</h3>
-        <p><b>Problem:</b> Need for lightweight communication between systems.</p>
-        <p><b>Solution:</b> Created a UDP-based client-server chat application.</p>
-        <p><b>Technologies:</b> Python, Networking</p>
-
-        {/* LINKS */}
-        <h2>Links</h2>
-        <div style={{ marginTop: "10px" }}>
+      <h2 style={{ marginTop: "30px" }}>Links</h2>
+      <ul>
+        <li>
+          GitHub:{" "}
           <a href="https://github.com/aamansaray0" target="_blank">
-            <button style={btn}>GitHub</button>
+            github.com/aamansaray0
           </a>
-
+        </li>
+        <li>
+          LinkedIn:{" "}
           <a
             href="https://www.linkedin.com/in/alicia-al-mansaray-85b4a8360/"
             target="_blank"
           >
-            <button style={btn}>LinkedIn</button>
+            linkedin.com/in/alicia-al-mansaray
           </a>
-        </div>
-      </div>
+        </li>
+      </ul>
 
-      {/* FOOTER */}
-      <p style={{ textAlign: "center", marginTop: "30px", color: "#6b7280" }}>
-        © 2026 Alicia Al
+      <hr style={{ marginTop: "30px" }} />
+
+      <p style={{ fontSize: "14px", color: "gray" }}>
+        © 2026 Alicia Al-Mansaray
       </p>
     </div>
   );
 }
-
-const btn = {
-  padding: "10px 16px",
-  marginRight: "10px",
-  background: "#2563eb",
-  color: "white",
-  border: "none",
-  borderRadius: "6px",
-  cursor: "pointer",
-};
